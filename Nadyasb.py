@@ -631,7 +631,7 @@ def lineBot(op):
                                 lists.append(mention["M"])
                         ret_ = "[ Mid User ]"
                         for ls in lists:
-                            ret_ += "\n{}" + ls
+                            ret_ += "\n" + ls
                         nadya.sendMessage(msg.to, str(ret_))
                 elif msg.text.lower().startswith("mid "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
@@ -644,7 +644,7 @@ def lineBot(op):
                                 lists.append(mention["M"])
                         ret_ = "[ Mid User ]"
                         for ls in lists:
-                            ret_ += "\n{}" + ls
+                            ret_ += "\n" + ls
                         nadya.sendMessage(msg.to, str(ret_))
                 elif msg.text.lower().startswith("stealname "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
